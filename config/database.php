@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '8889'),
-            'database' => env('DB_DATABASE', 'resume_bot'),
-            'username' => env('DB_USERNAME', 'root'),
-            'password' => env('DB_PASSWORD', 'root'),
+            'host' => env('DB_HOST', 'localhost'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'resumebo_resumes'),
+            'username' => env('DB_USERNAME', 'resumebo_admin'),
+            'password' => env('DB_PASSWORD', 'coder2007#'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -64,13 +64,13 @@ return [
         ],
 
         // Второе соединение для базы резюме
-        'resume_db' => [
+        'resumebo_resumes' => [
             'driver' => 'mysql',
-            'host' => env('RESUME_DB_HOST', '127.0.0.1'),
-            'port' => env('RESUME_DB_PORT', '8889'),
-            'database' => env('RESUME_DB_DATABASE', 'resume_bot'),
-            'username' => env('RESUME_DB_USERNAME', 'root'),
-            'password' => env('RESUME_DB_PASSWORD', 'root'),
+            'host' => env('RESUME_DB_HOST', 'localhost'),
+            'port' => env('RESUME_DB_PORT', '3306'),
+            'database' => env('RESUME_DB_DATABASE', 'resumebo_resumes'),
+            'username' => env('RESUME_DB_USERNAME', 'resumebo_admin'),
+            'password' => env('RESUME_DB_PASSWORD', 'coder2007#'),
             'unix_socket' => '',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
